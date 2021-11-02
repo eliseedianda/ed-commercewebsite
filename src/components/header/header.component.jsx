@@ -5,7 +5,7 @@ const Hearder = () => {
   return (
     <div className="header">
       <Link className="logo-container" to="/">
-        <h2 className="logo">EDCOMMERCE</h2>
+        <h2 className="logo">ED-COMMERCE</h2>
       </Link>
       <div className="options">
         <Link className="option" to="/shop">
