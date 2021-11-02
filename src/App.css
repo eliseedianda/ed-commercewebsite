@@ -2,3 +2,12 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   padding: 20px 70px;
 }
+h2 {
+  font-family: "Bigelow Rules";
+  color: #474747;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
