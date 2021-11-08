@@ -4,7 +4,7 @@ import "./custom-bottom.style.scss";
 const CustomButton = ({ children, isGoogleSignIn, ...otherProps }) => {
   return (
     <button
-      class={`${isGoogleSignIn ? "google-sign-in" : " "}custom-button`}
+      className={`${isGoogleSignIn ? "google-sign-in" : " "}custom-button`}
       {...otherProps}
     >
       {children}{" "}
