@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.style.scss";
 import { auth } from "../firebase/firebase-utils";
+import { connect } from "react-redux";
+
 const Hearder = ({ currentUser }) => {
   return (
     <div className="header">
@@ -30,5 +32,8 @@ const Hearder = ({ currentUser }) => {
     </div>
   );
 };
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
 
-export default Hearder;
+export default connect(mapStateToProps)(Hearder);

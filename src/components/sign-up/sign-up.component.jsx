@@ -4,7 +4,7 @@ import CustomButton from "../custom-button/custom-button.component";
 import "./sign-up.style.scss";
 import {
   auth,
-  creatUserProfileDocument,
+  createUserProfileDocument,
 } from "../../components/firebase/firebase-utils";
 
 class SignUp extends React.Component {
@@ -32,7 +32,7 @@ class SignUp extends React.Component {
         email,
         password
       );
-      await creatUserProfileDocument(user, { displayName });
+      await createUserProfileDocument(user, { displayName });
 
       this.state = {
         displayName: "",
